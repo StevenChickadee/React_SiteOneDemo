@@ -1,0 +1,84 @@
+#chevron ul {
+    padding-left: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+#chevron ul li {
+    flex: 1;
+    position: relative;
+    margin-left: -5%;
+}
+
+#chevron ul li div {
+    position: absolute;
+    top: 0;
+    right: -5%;
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 10% 100%, 0% 50%, 10% 0%);
+}
+
+#chevron ul li:first-child div {
+    right: 0;
+}
+
+#chevron ul li:last-child {
+    margin-left: 0;
+}
+
+/* Mobile styles */
+#chevron.mobile ul {
+	padding-left: 0px;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+#chevron.mobile ul li {
+	flex: 1;
+	position: relative;
+	margin-left: 0;
+	margin-bottom: -5%;
+	transform: rotate(-90deg);  
+}
+
+#chevron.mobile ul li div {
+	position: absolute;
+    top: 0;
+    right: -5%;
+    bottom: 0;
+    left: 0;
+	clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 10% 100%, 0% 50%, 10% 0%); 
+}
+
+#chevron.mobile ul li:first-child div {
+    right: 0;
+}
+
+#chevron.mobile ul li:last-child {
+    margin-left: 0;
+}
+
+.color_0 {
+    background-color: #BED2D2;
+}
+
+.color_1 {
+    background-color: #647D87;
+}
+
+.color_2 {
+    background-color: #37555A;
+}
+
+.color_3 {
+    background-color: #1E373C;
+}
