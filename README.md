@@ -1,2 +1,2 @@
 # React_SiteOneDemo
-Demo app ffor SiteOne
+Demo app for SiteOne hiring process
